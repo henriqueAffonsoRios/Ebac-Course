@@ -65,6 +65,21 @@ section {
   row-gap: 4%;
   .w100();
 
+  @media @breakpointTablet {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+
+  @media @breakpointMobile {
+    display: block;
+  }
+
+  &-item {
+    @media @breakpointMobile {
+      margin-bottom: 32px;
+    }
+  }
+
   &-item img {
     .w100();
     border-radius: 16px;
