@@ -103,5 +103,5 @@ module.exports = function(grunt){
   grunt.loadNpmTasks("grunt-replace");
 
   grunt.registerTask("default", ["watch"]);
-  grunt.registerTask("build", ["less:production", "htmlmin:dist", "replace:dist", "clean"]);
+  grunt.registerTask("build", ["less:production", "htmlmin:dist", "replace:dist", "clean", "uglify"]);
 }
