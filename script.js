@@ -22,4 +22,7 @@ $(document).ready(function() {
       avatar.attr("src", json.avatar_url);
       link.attr("href",json.html_url);
     })
+    .catch((error) => {
+      console.log(error);
+    })
 })
